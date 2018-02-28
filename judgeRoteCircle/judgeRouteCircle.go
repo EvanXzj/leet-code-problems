@@ -35,3 +35,21 @@ func main() {
 
 	fmt.Println(result)
 }
+
+// annother way
+// func judgeCircle(moves string) bool {
+//     var v,h int
+//     for _, c := range moves {
+//         switch c {
+//             case 'U':
+//               v += 1
+//             case 'D':
+//               v -= 1
+//             case 'R':
+//               h += 1
+//             case 'L':
+//               h -= 1
+//         }
+//     }
+//     return v == 0 && h == 0
+// }
