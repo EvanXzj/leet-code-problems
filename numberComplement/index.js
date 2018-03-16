@@ -35,5 +35,5 @@ const findComplement = (num) => {
 }
 
 console.time('a')
-console.log(findComplement(2123131131))
+console.log(findComplement(1000000000))
 console.timeEnd('a')
