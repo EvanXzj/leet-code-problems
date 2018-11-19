@@ -49,7 +49,62 @@ const twoSum3 = (nums, target) => {
   return 'No elements was found'
 }
 
-let nums = [3, 2, 4, 5, 9, 10, 20, 44, 8, 11, 64, 55, 59, 13, 21, 33, 40, 73, 81, 69, 4],
+// 哈希表中直接存每个元素所需要的值。need = target - nums[i]
+var twoSum4 = (nums, target) => {
+  const map = new Map()
+
+  for (let i = 0; i < nums.length; i++) {
+    const need = nums[i]
+
+    if (map.has(need)) {
+      return [map.get(need), i]
+    }
+
+    map.set(target - nums[i], i)
+  }
+
+  throw new Error('No two sum solution')
+}
+
+let nums = [
+    3,
+    2,
+    4,
+    5,
+    9,
+    10,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    53,
+    12,
+    252,
+    331,
+    123,
+    123,
+    123,
+    12,
+    123,
+    53,
+    12343,
+    8,
+    11,
+    64,
+    55,
+    59,
+    13,
+    21,
+    33,
+    40,
+    73,
+    81,
+    69,
+    4
+  ],
   target = 6
 console.time('twoSum')
 console.log(twoSum(nums, target))
@@ -62,3 +117,7 @@ console.timeEnd('twoSum2')
 console.time('twoSum3')
 console.log(twoSum3(nums, target))
 console.timeEnd('twoSum3')
+
+console.time('twoSum4')
+console.log(twoSum4(nums, target))
+console.timeEnd('twoSum4')
