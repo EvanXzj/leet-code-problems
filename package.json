@@ -1,0 +1,19 @@
+{
+  "name": "leet-code-problems",
+  "version": "1.0.0",
+  "description": "LeetCode problems solve",
+  "main": "selfDividingNumbers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanXzj/leet-code-problems.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvanXzj/leet-code-problems/issues"
+  },
+  "homepage": "https://github.com/EvanXzj/leet-code-problems#readme"
+}
