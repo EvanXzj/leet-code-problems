@@ -31,7 +31,7 @@ let twoSum2 = (nums, target) => {
   }
 }
 
-// 在遍历插入元素到哈希表的同时去判断是否存在可用结果， 可以解决上面的问题2
+// 在遍历插入元素到哈希表的同时去判断是否存在可用结果， 可以解决上面的问题2, 同时有另外一个问题[1,1,5] -> [1,2]
 const twoSum3 = (nums, target) => {
   const map = new Map()
 
@@ -49,7 +49,7 @@ const twoSum3 = (nums, target) => {
   return 'No elements was found'
 }
 
-// 哈希表中直接存每个元素所需要的值。need = target - nums[i]
+// 哈希表中直接存每个元素所需要的值。need = target - nums[i], 然后当前值是否在哈希表中。
 var twoSum4 = (nums, target) => {
   const map = new Map()
 
