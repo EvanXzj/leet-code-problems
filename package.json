@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/EvanXzj/leet-code-problems/issues"
   },
-  "homepage": "https://github.com/EvanXzj/leet-code-problems#readme"
+  "homepage": "https://github.com/EvanXzj/leet-code-problems#readme",
+  "dependencies": {
+    "bignumber.js": "^8.0.1"
+  }
 }
